@@ -6,7 +6,7 @@ path = input("Enter folder path: ").strip()
 
 # Folders to create
 folders = ["Images", "Documents", "Videos"]
-#if os.path.isfile(file): it gives only file name and file are not in current directory so it will not work
+
 # Step 1: Create folders if not exist
 for folder in folders:
     folder_path = os.path.join(path, folder)
@@ -21,7 +21,7 @@ for file in os.listdir(path):
 
     if os.path.isfile(full_path):
         name, ext = os.path.splitext(file)
-        ext = ext.lower()   # 🔥 important for .JPG, .PDF etc.
+        ext = ext.lower()   # important for .JPG, .PDF etc.
 
         if ext in [".jpg", ".png", ".jpeg"]:
             shutil.move(full_path, os.path.join(path, "Images", file))
