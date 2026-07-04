@@ -117,4 +117,4 @@ Moved lecture.mp4 -> Videos
 
 Python Developer | AI & Automation Enthusiast
 
-If you found this project useful or interesting, feel free to star the repository.
+
